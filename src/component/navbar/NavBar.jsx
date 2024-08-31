@@ -21,7 +21,7 @@ const NavBar = () => {
                 </div>
                 <div className={`${styles.navbar_menu} ${menuOpen ? styles.active : ''}`}>
                     <ul className={styles.navbar_links}>
-                        <li><NavLink className={(isActive) =>isActive ? "active" : ""} to="/Task3/ ">Home </NavLink></li>
+                        <li><NavLink className={(isActive) =>isActive ? "active" : ""} to="/Villa/ ">Home </NavLink></li>
                         <li><NavLink className={(isActive) =>isActive ? "active" : ""}  to="/Properties">Properties</NavLink></li>
                         <li><NavLink className={(isActive) =>isActive ? "active" : ""}  to="/BestDeal">Property Details</NavLink></li>
                         <li><NavLink className={(isActive) =>isActive ? "active" : ""}  to="/ContactUs">Contact Us</NavLink></li>
