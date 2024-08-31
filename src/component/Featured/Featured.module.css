@@ -1,0 +1,260 @@
+.container {
+  text-align: center;
+  margin: -10px;
+}
+.title {
+background-size: cover;
+background-position: center;
+padding: 100px 20px;
+color: white;
+position: relative;
+}
+.title h1{
+  font-weight: bold;
+  font-size: 40px;
+  padding-top: 10px;
+}
+.homediv{
+  background-color: #f5f5f5;
+  padding: 18px;
+  color:#333;
+  
+}
+.titleRed{
+  color: #ff5733; 
+}
+.accordionItem {
+  margin-bottom: 10px;
+  width: 100%;
+  
+}
+
+.accordionTitle {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid rgb(219, 221, 222);
+  background-color: rgba(250, 250, 250);
+}
+
+.accordionContent {
+  padding: 10px;
+  background-color: rgba(250, 250, 250);
+  border: #333;
+}
+
+/* Container */
+.propertyCard {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  gap: 10px;
+  max-width: 100%;
+  height: auto; 
+  padding: 20px;
+  background-color: #fff;
+  /* align-items: start; */
+  margin-top: 40px;
+  height: fit-content;
+  
+}
+
+/* Image Section */
+.propertyImageContainer {
+  width: 100%;
+  height: fit-content;
+  
+}
+.propertyImage {
+  width: 95%;
+  height: 400px;
+  padding-bottom: 5px;
+  padding-right: 0px;
+
+}
+
+/* Text Content Section */
+.propertyDetails {
+  text-align: left;
+  
+}
+
+.featured {
+  color: #d9534f;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.propertyDetailsDiv {
+  background-color: rgba(250, 250, 250);
+  border-radius: 5%;
+  margin: 1%;
+  padding: 20px;
+  width: 100%;
+
+}
+
+.hrstyle {
+  border: none;          
+  height: 1px;           
+  background-color: rgb(219, 221, 222); 
+  width: 100%;            
+  margin: 20px auto; 
+}
+
+.bestLinksTitle {
+  color: #d9534f;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.bestLinks {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.bestLinks .span_1 {
+  font-size: 18px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.bestLinks .span_2 {
+  font-size: 16px;
+  color: royalblue;
+}
+.bestLinks .span_3 {
+  font-size: 16px;
+  color: rgb(162, 71, 154);
+}
+
+.linksList {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.linksList li {
+  font-size: 17px;
+  color: #202020;
+  margin-bottom: 10px;
+}
+/* Icon Section */
+
+  .propertyIcons {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px; 
+    margin-top: 0px; 
+    height: 50%;
+    width: 80%;
+    border-radius: 2%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    position: inherit;
+    justify-content: center;
+    justify-content: space-around
+  }
+.iconCard {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  
+}
+.iconImage {
+  width: 40px;
+  height: 40px;
+  margin-top: 0px;
+  
+
+}
+.propertyIconsline{
+  border: none;          /* إزالة الحدود الافتراضية */
+  height: 1px;           /* سمك الخط */
+  background-color:rgb(219, 221, 222); /* لون الخط */
+  width: 75%;            /* عرض الخط */
+  margin: 10px auto; 
+      /* محاذاة الخط إلى الوسط مع إضافة مسافة فوق وتحت */
+}
+.iconCard p {
+  display: contents;
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+  
+
+}
+.iconCard p span{
+  display: contents;
+  margin: 0;
+  font-size: 10px;
+  color: rgb(200, 202, 203);;
+  text-align: left;
+
+}
+
+
+.pargra{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+  
+
+}
+.pargra button{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  background-color: rgb(250,217,208);
+  cursor: pointer;
+  width: 30%;
+  margin-bottom: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .propertyCard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .propertyImage {
+    width: 100%;
+  }
+  .propertyIcons {
+    justify-content: center; 
+    width: 100%;
+  }
+
+
+  .propertyImageIconContainer {
+    width: 20%;
+    transform: translate(-50%, 23%);
+  }
+
+  .propertyDetails {
+    text-align: center;
+  }
+
+  .propertyDetailsDiv {
+    padding: 20px;
+  }
+
+  .linksList li {
+    font-size: 16px;
+  }
+}

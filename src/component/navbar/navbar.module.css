@@ -1,0 +1,157 @@
+/* Top Bar */
+.top_bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f7f7f7;
+    font-size: 14px;
+}
+
+.contact_info span {
+    margin-right: 20px;
+    color: #333;
+}
+
+.social_icons a {
+    margin-left: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social_icons a:hover {
+    color: #ff5a3c;
+}
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+
+.navbar_brand h1 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+.menu_toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.navbar_menu {
+    display: flex;
+    align-items: center;
+}
+
+.navbar_links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar_links li {
+    margin: 0 15px;
+}
+
+.navbar_links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+.navbar_links a.active{
+    color: #ff5a3c;
+}
+
+.navbar_links a:hover {
+    color: #ff5a3c;
+}
+
+.schedule_button .btn_schedule {
+    background-color: #ff5a3c;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.schedule_button .btn_schedule:hover {
+    background-color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu_toggle {
+        display: block;
+    }
+
+    .navbar_menu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 15px 20px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar_menu.active {
+        display: flex;
+    }
+
+    .navbar_links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar_links li {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .navbar_links a {
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .schedule_button {
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+    }
+    
+    .top_bar {
+        display: none;
+    }
+
+    .contact_info {
+        margin-bottom: 10px;
+    }
+}
+
+/* Restore Desktop Layout */
+@media (min-width: 769px) {
+    .navbar_menu {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        box-shadow: none;
+        padding: 0;
+    }
+}
