@@ -1,11 +1,14 @@
 
-import Slider from "../slider/Slider"
+import Slider from "../../component/slider/Slider"
+
 
 
 function Home() {
   return (
     <div>
       <Slider/>
+      
+
     </div>
   )
 }

@@ -1,0 +1,124 @@
+.container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  color: white;
+  position: relative;
+  
+}
+
+.hero h2 {
+  font-size: 16px;
+  color: #ff6347;
+  margin-bottom: 10px;
+  filter: none;
+}
+
+.hero h1 {
+  font-size: 36px;
+  line-height: 1.2;
+  color: white;
+}
+
+.videoWrapper {
+  position: relative;
+  display: inline-block;
+  margin-top: -100px;
+  z-index: 1;
+}
+
+.thumbnail {
+  width: 80%;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.playButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-color: #ff6347;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playButton::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 15px solid white;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.statItem {
+  background-color: #ffe4e1;
+  padding: 20px 40px;
+  border-radius: 12px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  overflow: inherit; /* لضمان أن الدوائر تتجاوز الحواف */
+}
+
+.statItem::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: #ff6347;
+  border-radius: 50%;
+  position: absolute;
+  top: -12px; /* فوق الزاوية العلوية اليسرى */
+  left: 89%; /* فوق الزاوية العلوية اليسرى */
+  
+}
+
+.statItem h3 {
+  font-size: 32px;
+  color: #ff6347;
+  margin-right: 10px;
+}
+
+.statItem p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+  text-align: left;
+}
+
+/* استعلام الوسائط لتغيير العرض على الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .stats {
+    flex-direction: column; /* ترتيب العناصر عمودياً */
+    align-items: center; /* محاذاة العناصر إلى المنتصف */
+  }
+
+  .statItem {
+    width: 80%; /* تأخذ العرض الكامل تقريباً */
+    margin-bottom: 20px;
+  }
+
+  .statItem::before {
+    top: -5px; /* فوق الزاوية العلوية اليسرى */
+    left: 93%;
+  }
+}

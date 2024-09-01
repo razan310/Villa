@@ -1,116 +1,201 @@
 /* Top Bar */
 .top_bar {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 20px 100px;
     background-color: #f7f7f7;
     font-size: 14px;
 }
-
+.contact_info{
+    display: flex;
+    flex-direction: row;
+}
+.contact_info div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-left: 1px solid #eaeaea; 
+}
 .contact_info span {
     margin-right: 20px;
     color: #333;
 }
-
-.social_icons a {
-    margin-left: 10px;
+.myIcon{
+    color: #ff5a3c !important;
+    font-size:30px;
+    margin: 10px;
+}
+.social_icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     color: #333;
-    text-decoration: none;
-    font-size: 16px;
+    font-size:30px;
 }
-
-.social_icons a:hover {
-    color: #ff5a3c;
+.social_icons a{
+    color: #333;   
 }
-
 
 /* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 30px 100px;
     background-color: #fff;
     border-bottom: 1px solid #eee;
     position: relative;
 }
-
 .navbar_brand h1 {
-    font-size: 24px;
+    font-size: 30px;
+    font-weight: bold;
     color: #333;
     margin: 0;
 }
-
-.menu_toggle {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-    margin-left: auto;
-}
-
 .navbar_menu {
     display: flex;
     align-items: center;
 }
-
 .navbar_links {
+    display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
+    
 }
-
 .navbar_links li {
     margin: 0 15px;
 }
-
 .navbar_links a {
     text-decoration: none;
     color: #333;
     font-size: 16px;
     padding: 5px 0;
-    transition: color 0.3s;
+    transition: all 0.3s ease;
 }
 .navbar_links a.active{
     color: #ff5a3c;
+    border-bottom: 2px solid #ff5a3c;
 }
-
 .navbar_links a:hover {
     color: #ff5a3c;
+    border-bottom: 2px solid #ff5a3c;
 }
-
 .schedule_button .btn_schedule {
     background-color: #ff5a3c;
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 10px;
     text-decoration: none;
     border-radius: 25px;
     transition: background-color 0.3s;
 }
-
 .schedule_button .btn_schedule:hover {
     background-color: #333;
 }
+.menu_toggle {
+    /* display: none; */
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: auto;
+}
+.menu_icon {
+    display: none;
+    cursor: pointer;
+}
+.nav_menu {
+    display: none;
+    padding-bottom: 20px;
+    position: absolute;
+    text-align: center;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    z-index: 9999;
+}
+.menu_links li{
+    padding: 10px 10px;
+}
+.menu_links a {
+    text-align: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 10px 10px;
+    transition: all 0.3s ease;
+}
+
+.menu_links a:hover {
+    color: #ff5a3c;
+    border-bottom: 2px solid #ff5a3c;
+}
+.menu_links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+.nav_menu.active {
+    display: block;
+}
+.menu_icons {
+    align-items: center;
+    cursor: pointer;
+}
+.menu_icons a{
+    padding-top: 10px;
+    color: #333;
+    font-size:30px;
+}
+
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media screen and (max-width: 992px) {
+    .menu_icon {
+        display: block;
+        font-size: 1.5rem; 
+    }
+    .schedule_button .btn_schedule {
+        display: none;
+    }
+    .navbar_links{
+        display: none;
+    }
+
+    .logo {
+        font-size: 1.3rem; 
+    }
+    .nav_menu {
+        padding: 10px 0;
+        box-shadow: none;
+        border-radius: 0;
+    }
+    .nav_menu ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    .nav_menu li {
+        padding: 0.7rem;
+        font-size: 1rem;
+    }
+    
+    .nav_menu .button1 {
+        padding: 0.6rem;
+        font-size: 1rem;
+        width: 90%;
+    }
+    .button1 {
+        display: none;
+    }
     .menu_toggle {
         display: block;
     }
-
-    .navbar_menu {
-        display: none;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-        background-color: #fff;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        padding: 15px 20px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
     .navbar_menu.active {
         display: flex;
     }
@@ -119,7 +204,6 @@
         flex-direction: column;
         width: 100%;
     }
-
     .navbar_links li {
         margin: 10px 0;
         width: 100%;
@@ -129,29 +213,21 @@
         padding: 10px 0;
         width: 100%;
     }
-
     .schedule_button {
         width: 100%;
         text-align: center;
         margin-top: 15px;
-    }
-    
+    }   
     .top_bar {
         display: none;
     }
-
     .contact_info {
         margin-bottom: 10px;
     }
 }
-
-/* Restore Desktop Layout */
-@media (min-width: 769px) {
-    .navbar_menu {
-        display: flex;
-        flex-direction: row;
-        position: static;
-        box-shadow: none;
-        padding: 0;
+@media screen and (max-width: 769px) {
+    .navbar{
+        padding: 27px;
     }
+
 }
