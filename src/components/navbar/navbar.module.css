@@ -74,10 +74,15 @@
     padding: 5px 0;
     transition: all 0.3s ease;
 }
-.navbar_links a.active{
+.active {
+    color: #ff5a3c !important;
+    border-bottom: 2px solid #ff5a3c !important;
+  }
+  
+.navbar_links a.active {
     color: #ff5a3c;
     border-bottom: 2px solid #ff5a3c;
-}
+  }
 .navbar_links a:hover {
     color: #ff5a3c;
     border-bottom: 2px solid #ff5a3c;
