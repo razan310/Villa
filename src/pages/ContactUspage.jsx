@@ -1,6 +1,6 @@
 
 
-import Contactus2 from '../component/contactus2/Contactus2'
+import Contactus2 from '../components/contactus2/Contactus2'
 
 function ContactUspage() {
   return (

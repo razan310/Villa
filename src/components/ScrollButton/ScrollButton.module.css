@@ -1,0 +1,16 @@
+.scrollToNavbar {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  padding: 5px 15px;
+  background-color: #ff5a60eb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.scrollToNavbar:hover {
+  background-color: #333;
+}

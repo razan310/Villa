@@ -14,12 +14,12 @@ const Slider = () => {
         {
             image: image2,
             location: 'Miami, USA',
-            text: 'YOUR DREAM\nVILLA IS JUST\nA CLICK AWAY'
+            text: 'HURRY!\nGET THE\nBEST VILLA\nFOR YOU'
         },
         {
             image: image3,
             location: 'Toronto, Canada',
-            text: 'YOUR DREAM\nVILLA IS JUST\nA CLICK AWAY'
+            text: 'HURRY!\nGET THE\nBEST VILLA\nFOR YOU'
         }
     ];
 
@@ -28,7 +28,7 @@ const Slider = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
-        }, 5000); // تغيير الشريحة كل 5 ثوانٍ
+        }, 5000); 
 
         return () => clearInterval(interval);
     }, [slides.length]);
@@ -60,7 +60,7 @@ const Slider = () => {
                         )
                         )}
                     </span>
-                        <h1>
+                        <h1 className={styles.infospan}>
                             {slide.text.split('\n').map((line, index) => (
                                     <span key={index}>
                                         {line}

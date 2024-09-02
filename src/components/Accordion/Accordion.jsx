@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
-import styles from './Featured.module.css'; 
+import styles from './Accordion.module.css'; 
 
 const Accordion = ({ title, content, titleClass }) => {
     const [isOpen, setIsOpen] = useState(false);

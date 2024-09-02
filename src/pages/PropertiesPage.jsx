@@ -1,4 +1,4 @@
-import Properties from "../component/Properties/Properties"
+import Properties from "../components/Properties/Properties"
 
 
 function PropertiesPage() {

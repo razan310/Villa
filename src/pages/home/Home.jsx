@@ -1,5 +1,6 @@
 
-import Slider from "../../component/slider/Slider"
+import HomeFeatured from "../../components/HomeFeatured/HomeFeatured"
+import Slider from "../../components/slider/Slider"
 
 
 
@@ -7,6 +8,7 @@ function Home() {
   return (
     <div>
       <Slider/>
+      <HomeFeatured/>
       
 
     </div>

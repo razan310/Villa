@@ -1,6 +1,6 @@
 
-import BestDeal from '../component/bestDeal/BestDeal'
-import Featured from '../component/Featured/Featured'
+import BestDeal from '../components/bestDeal/BestDeal'
+import Featured from '../components/Featured/Featured'
 function PropertyDetails() {
   return (
     <div>

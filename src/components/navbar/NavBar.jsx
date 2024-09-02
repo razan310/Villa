@@ -19,7 +19,7 @@ const NavBar = () => {
 
 
     return (
-        <header>
+        <header id="navbar">
             <div className={styles.top_bar}>
                 <div className={styles.contact_info}>
                     <div><MdEmail className={styles.myIcon}/> <span>info@company.com</span></div>
@@ -34,7 +34,7 @@ const NavBar = () => {
             </div>
 
             
-            <nav className={styles.navbar}>
+            <nav  className={styles.navbar}>
                 <div className={styles.navbar_brand}>
                     <h1>VILLA</h1>
                 </div>

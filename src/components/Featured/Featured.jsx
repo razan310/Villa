@@ -1,6 +1,6 @@
 
 import styles from './Featured.module.css'; 
-import Accordion from './Accordion'
+import Accordion from '../Accordion/Accordion'
 import propertyImage from './../../assets/images/property-01.jpg'; 
 import icon1 from './../../assets/images/info-icon-01.png'; 
 import icon2 from './../../assets/images/info-icon-02.png'; 
