@@ -1,5 +1,6 @@
 import styles from './contactus.module.css'
 import page_heading_bg from './../../assets/images/page-heading-bg.jpg';
+import ContactUs from '../ContactUs/ContactUs';
 
 function Contactus2() {
   return (
@@ -11,7 +12,7 @@ function Contactus2() {
                     <h1>CONTACT US</h1>
                 </div>
         </div>
-
+        <ContactUs/>
     </div>
   )
 }
