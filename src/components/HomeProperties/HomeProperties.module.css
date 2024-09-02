@@ -1,0 +1,269 @@
+.titleprop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titleprop p{
+    color: #ff5a3c;
+}
+.titleprop h1{
+    text-align: center;
+    color: #333;
+}
+
+
+.container {
+    text-align: center;
+    margin-top: 0px;
+}
+.hero {
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  color: white;
+  position: relative;
+}
+.hero h1{
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 10px;
+}
+.homediv{
+    background-color: #f5f5f5;
+    padding: 18px;
+    color:#333;
+    
+}
+
+.buttons{
+    border: none;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    margin-left: 2px;
+    gap: 10px;
+    margin-left: auto;
+    padding-bottom: 20px;
+}
+.button {
+    
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    background-color:#333;
+}
+.button:hover{
+    border: none;
+    background-color:#ff5a3c;
+}
+
+
+.propertiesContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.propertyCard {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;  /* استخدام flexbox */
+    flex-direction: column;  /* ترتيب العناصر بشكل عمودي */
+    justify-content: center; /* جعل المحتوى في المنتصف عمودياً */
+    align-items: center; /* جعل المحتوى في المنتصف أفقياً */
+}
+
+.propertyCard:hover {
+    transform: translateY(-4px);
+}
+
+.propertyImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 8%;
+    align-self: center;
+    height: 95%;
+    padding: 5%;
+    object-fit: cover;
+}
+
+.propertyInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 100%;
+    padding: 10px; 
+    box-sizing: border-box;
+}
+
+.propertyInfoButton1 {
+    background-color: rgb(250, 217, 208);
+    border-radius: 5px;
+    border: none;
+    margin-top: 0px; 
+    margin-bottom: 0;
+    padding: 0 4px;
+}
+
+.propertyPrice {
+    color: #ff5a3c;
+    position: relative;
+    margin-top: 0; 
+}
+
+
+.propertyInfoTypePrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; 
+}
+
+.hrStyle{
+    border: none;          
+    height: 2px;           
+    background-color: rgb(219, 221, 222); 
+    width: 100%;            
+    margin: 20px auto; 
+}
+
+.propertyInfoButton2 {
+    background-color: rgb(30, 30, 30);
+    color: #f5f5f5;
+    border-radius: 20px;
+    border: none;
+    font-size: 0.8rem; /* تقليل حجم النص */
+    padding: 5px 10px; /* تقليل حجم الزر */
+    align-self: center; /* وضع الزر في منتصف الأسفل */
+    margin-top: auto; /* دفع الزر نحو الأسفل */
+    margin-bottom: 10px; /* إضافة مسافة بسيطة في الأسفل */
+}
+
+.propertyDetails {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* الحفاظ على عمودين */
+    gap: 5px; /* تقليل الفراغ بين الأعمدة */
+    margin-bottom: 5px; /* تقليل المسافة السفلية */
+    text-align: left; /* محاذاة النصوص إلى اليسار */
+    color: #333;
+    justify-content: flex-start;
+}
+.propertyDetails h5 {
+    margin: 0; /* إزالة الهوامش لتقليل المسافات بين العناصر */
+    font-size: 0.9rem; /* يمكنك تعديل الحجم حسب رغبتك */
+}
+
+
+.propertyDetails h5 span {
+    font-size: 13px;
+    font-weight: lighter;
+    color: #848383;
+    margin-right: 5px; /* إضافة مسافة بسيطة بين النص والعنوان */
+}
+
+.propertyTitle {
+    margin: 0 0 10px;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.propertyInfo p {
+    margin: 0;
+    font-size: 1rem;
+    color: #777;
+    width: 90%;
+    border-radius: 8%;
+    align-self: center;
+    height: 95%;
+    padding: 5%;
+    margin-top: 15%;
+    margin-bottom: 10%;
+    object-fit: cover;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding-bottom: 30px;
+  }
+  
+  .page_btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: lighter;
+  }
+  .page_btn_1{
+    font-size: 9px;
+    background-color:#333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 11px 12px;
+    cursor: pointer;
+    font-weight: lighter;
+  }
+  
+  .page_btn_active {
+    background-color:#ff5a3c;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 11px 15px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .propertiesContainer {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: -70px;
+
+    }
+    .buttons{
+        display: flex;
+        padding-bottom: 150px;
+    }
+    .propertiesFirstTitel{
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        margin-top: 14%;
+        margin-bottom: -36%;
+        height: 1vh;
+        text-align: center;
+        font-size: 1rem; 
+        color: #ff5a3c; 
+    
+    }
+
+}
+
+@media (max-width: 480px) {
+    .propertiesContainer {
+        grid-template-columns: 1fr;
+    }
+    .buttons{
+        display: flex;
+        padding-bottom: 150px;
+    }
+}
