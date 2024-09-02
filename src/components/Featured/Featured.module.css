@@ -179,9 +179,9 @@ position: relative;
 
 }
 .propertyIconsline{
-  border: none;          /* إزالة الحدود الافتراضية */
-  height: 1px;           /* سمك الخط */
-  background-color:rgb(219, 221, 222); /* لون الخط */
+  border: none;         
+  height: 1px;          
+  background-color:rgb(219, 221, 222); 
   width: 75%;            /* عرض الخط */
   margin: 10px auto; 
       /* محاذاة الخط إلى الوسط مع إضافة مسافة فوق وتحت */
@@ -203,8 +203,6 @@ position: relative;
   text-align: left;
 
 }
-
-
 .pargra{
   display: flex;
   flex-direction: column;
